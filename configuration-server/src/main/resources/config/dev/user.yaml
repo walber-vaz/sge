@@ -1,2 +1,18 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/sistema_sge_user_db}
+    username: ${SPRING_DATASOURCE_USERNAME:docker}
+    password: ${SPRING_DATASOURCE_PASSWORD:docker}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
+
 server:
   port: 8081
