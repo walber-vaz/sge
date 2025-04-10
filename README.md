@@ -1,7 +1,31 @@
 # Sistema de Cadastro de Produtos - Arquitetura Completa
 
-# Detalhes do Projeto
+## Detalhes do Projeto
 [DOC](./DOC.md)
+
+## 🛠️ Tecnologias Utilizadas
+
+- Java 21 - Aproveitando recursos como Virtual Threads
+- Spring Boot 3 - Base para desenvolvimento dos microserviços
+- Spring Cloud - Suite de ferramentas para sistemas distribuídos
+    - Spring Cloud Gateway - API Gateway
+    - Spring Cloud Netflix Eureka - Service Discovery
+    - Spring Cloud Config - Configuração centralizada
+- PostgreSQL - Banco de dados relacional
+- Docker - Containerização
+- Maven - Gerenciamento de dependências
+
+## 🛣️ Roadmap
+
+- [x] Design inicial da arquitetura
+- [x] Implementação da infraestrutura básica (Config Server, Service Discovery, API Gateway)
+- [ ] Implementação do Auth Service
+- [ ] Implementação do Produto Service
+- [ ] Implementação do Cliente Service
+- [ ] Implementação do Venda Service
+- [ ] Implementação da mensageria entre serviços
+- [ ] Implementação do Notificação Service
+- [ ] Deploy em ambiente de produção
 
 ## Parte 1: Regras de Negócio (MVP)
 
