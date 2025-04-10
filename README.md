@@ -1,7 +1,24 @@
-# Sistema de Cadastro de Produtos - Arquitetura Completa
+# Sistema de Cadastro de Produtos - Arquitetura de Microserviços
 
-## Detalhes do Projeto
-[DOC](./DOC.md)
+![Java](https://img.shields.io/badge/Java-21-orange) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-green) ![Spring Cloud](https://img.shields.io/badge/Spring%20Cloud-Latest-blue) ![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
+
+## 📋 Sobre o Projeto
+
+Este projeto implementa um sistema de cadastro de produtos com controle de estoque, vendas e clientes utilizando uma arquitetura moderna de microserviços baseada em Java 21 e Spring Boot 3.
+[Mais detalhes aqui](./DOC.md)
+
+## 🏗️ Arquitetura do Sistema
+
+```sh
+├── api-gateway                # Ponto único de entrada (Spring Cloud Gateway)
+├── discovery-service          # Service Discovery com Eureka
+├── configuration-server              # Configuração centralizada com Spring Cloud Config
+├── user-service               # Serviço de autenticação e usuários
+├── product-service            # Serviço de gerenciamento de produtos e estoque
+├── client-service            # Serviço de gerenciamento de clientes
+├── sale-service              # Serviço de gerenciamento de vendas
+└── notification-service        # Serviço de notificações
+```
 
 ## 🛠️ Tecnologias Utilizadas
 
