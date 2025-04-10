@@ -42,6 +42,9 @@ public class User {
   @Column(nullable = false)
   private String password;
 
+  @Column(columnDefinition = "boolean default true")
+  private String isActive;
+
   @CreationTimestamp
   @Column(nullable = false, updatable = false)
   private LocalDateTime createdAt;
