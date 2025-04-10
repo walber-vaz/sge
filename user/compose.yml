@@ -1,0 +1,12 @@
+services:
+  db:
+    build: postgres
+    image: sistema_sge_user_db
+    volumes:
+      - $HOME/.postgres/sistema_sge_user_db/data/postgresql:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DBS=sistema_sge_user_db, sistema_sge_user_db_test
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
