@@ -1,6 +1,18 @@
+spring:
+  threads:
+    virtual:
+      enabled: true
+
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
+
+server:
+  tomcat:
+    threads:
+      max: 20
+  error:
+    include-stacktrace: never
