@@ -1,3 +1,4 @@
-br/com/sge/exception/NotFoundException.class
 br/com/sge/exception/GlobalExceptionHandler.class
+br/com/sge/exception/ConflictException.class
+br/com/sge/exception/NotFoundException.class
 br/com/sge/exception/DefaultErrorMessage.class
