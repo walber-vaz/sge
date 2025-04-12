@@ -10,3 +10,5 @@ services:
       - POSTGRES_DBS=sistema_sge_user_db
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=docker
+    stdin_open: true
+    tty: true
