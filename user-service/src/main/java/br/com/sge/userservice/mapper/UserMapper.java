@@ -2,6 +2,7 @@ package br.com.sge.userservice.mapper;
 
 import br.com.sge.userservice.domain.User;
 import br.com.sge.userservice.dto.request.UserCreateRequest;
+import br.com.sge.userservice.dto.request.UserUpdateRequest;
 import br.com.sge.userservice.dto.response.UserGetResponse;
 import br.com.sge.userservice.dto.response.UserResponsePost;
 import java.util.List;
@@ -15,6 +16,8 @@ public interface UserMapper {
   User toUser(UserCreateRequest userCreateRequest);
 
   UserResponsePost toUserResponsePost(User user);
+
+  User toUser(UserUpdateRequest userUpdateRequest);
 
   List<UserGetResponse> toUserGetResponseList(List<User> users);
 }
