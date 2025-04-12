@@ -8,9 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
         <module name="discovery-service" />
+        <module name="commons-core" />
         <module name="configuration-server" />
       </profile>
-      <profile name="Annotation profile for user" enabled="true">
+      <profile name="Annotation profile for sge" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -27,6 +28,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
+      <module name="commons-core" options="-parameters" />
       <module name="configuration-server" options="-parameters" />
       <module name="discovery-service" options="-parameters" />
       <module name="user" options="-parameters" />
