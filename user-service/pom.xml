@@ -10,10 +10,10 @@
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>br.com.sge</groupId>
-  <artifactId>user</artifactId>
+  <artifactId>user-service</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>user</name>
-  <description>user</description>
+  <name>user-service</name>
+  <description>user-service</description>
   <url/>
   <licenses>
     <license/>

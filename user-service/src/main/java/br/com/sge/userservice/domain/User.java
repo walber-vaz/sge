@@ -1,4 +1,4 @@
-package br.com.sge.user.domain;
+package br.com.sge.userservice.domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

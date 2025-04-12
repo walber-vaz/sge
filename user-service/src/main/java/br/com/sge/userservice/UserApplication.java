@@ -1,4 +1,4 @@
-package br.com.sge.user;
+package br.com.sge.userservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

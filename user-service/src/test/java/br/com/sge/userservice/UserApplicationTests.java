@@ -1,4 +1,4 @@
-package br.com.sge.user;
+package br.com.sge.userservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

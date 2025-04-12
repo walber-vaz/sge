@@ -1,4 +1,4 @@
-package br.com.sge.user.dto.request;
+package br.com.sge.userservice.dto.request;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

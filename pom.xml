@@ -11,7 +11,7 @@
     <module>api-gateway</module>
     <module>configuration-server</module>
     <module>discovery-service</module>
-    <module>user</module>
+    <module>user-service</module>
     <module>commons-core</module>
   </modules>
 </project>
