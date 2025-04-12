@@ -4,11 +4,11 @@ LABEL description="Builds the Java application"
 
 WORKDIR /app
 
-COPY user/pom.xml .
+COPY pom.xml .
 
 RUN mvn dependency:go-offline -B
 
-COPY user/src ./src
+COPY src ./src
 
 RUN mvn clean package -DskipTests
 
