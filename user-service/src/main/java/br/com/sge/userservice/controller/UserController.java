@@ -1,6 +1,7 @@
 package br.com.sge.userservice.controller;
 
 import br.com.sge.userservice.dto.request.UserCreateRequest;
+import br.com.sge.userservice.dto.request.UserUpdateRequest;
 import br.com.sge.userservice.dto.response.UserGetResponse;
 import br.com.sge.userservice.dto.response.UserResponsePost;
 import br.com.sge.userservice.mapper.UserMapper;
@@ -13,6 +14,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -48,5 +50,16 @@ public class UserController {
     var response = mapper.toUserResponsePost(userSaved);
 
     return ResponseEntity.status(HttpStatus.CREATED).body(response);
+  }
+
+  @PutMapping
+  public ResponseEntity<Void> update(@RequestBody @Valid UserUpdateRequest request) {
+    log.info("Request to update user: {}", request);
+
+    var user = mapper.toUser(request);
+
+    service.update(user);
+
+    return ResponseEntity.noContent().build();
   }
 }
